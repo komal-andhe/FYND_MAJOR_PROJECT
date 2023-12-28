@@ -1,0 +1,76 @@
+{
+    "builds":[
+
+        {
+            "src":"index.js",
+            "use":"@vercel/node"
+        }
+
+       ],
+
+"routes":
+    [
+    {
+        "src":"/products",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/products/(.*)",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/categories",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/categories/(.*)",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/users",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/users/(.*)",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/auth",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/auth/(.*)",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/cart",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/cart/(.*)",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/orders",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/orders/(.*)",
+        "dest":"/index.js"
+    },
+    {
+        "src":"/",
+        "dest":"/index.html"
+    },
+    {
+        "src":"/(.+)",
+        "dest":"/index.html"
+    }
+
+    ]
+
+    
+
+
+}
+

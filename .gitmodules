@@ -1,0 +1,3 @@
+[submodule "mern-server"]
+	path = mern-server
+	url = https://github.com/komal-andhe/mern-server.git
